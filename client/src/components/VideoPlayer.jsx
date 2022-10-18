@@ -5,6 +5,7 @@ import { SocketContext } from '../Context';
 
 const useStyles = makeStyles((theme) => ({
   video: {
+    borderRadius: '1rem 1rem .5rem .5rem',
     width: '550px',
     [theme.breakpoints.down('xs')]: {
       width: '300px',
@@ -17,10 +18,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   paper: {
-    padding: '10px',
-    border: '2px solid black',
+    border: '1px solid rgba(0,0,0,.1)',
     margin: '10px',
+    padding: '5px',
+    borderRadius: '1rem',
   },
+  name: {
+    position: 'absolute',
+  },
+
 }));
 
 const VideoPlayer = () => {
@@ -32,7 +38,7 @@ const VideoPlayer = () => {
       {stream && (
         <Paper className={classes.paper}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" gutterBottom>{name || 'Name'}</Typography>
+            <Typography variant="h5" className={classes.name} gutterBottom>{name || 'Name'}</Typography>
             <video playsInline muted ref={myVideo} autoPlay className={classes.video} />
           </Grid>
         </Paper>
