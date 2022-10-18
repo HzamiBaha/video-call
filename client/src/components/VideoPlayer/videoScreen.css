@@ -1,0 +1,59 @@
+.videoScreen {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 3rem;
+    height: 85vh;
+}
+
+.videoScreen__guest {
+    display: flex;
+    width: 64.2%;
+    background-color: #2B2D2E !important;
+    border-radius: 20px !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.videoScreen__host {
+    display: flex;
+    width: 30%;
+    background-color: #2B2D2E !important;
+    border-radius: 20px !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.appBar {
+    display: flex;
+    width: 88%;
+    margin: 2rem auto 2.5rem;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.brand_logo {
+    width: 30px;
+    height: 30px;
+}
+
+.line {
+    width: 2px;
+    height: 20px;
+    background-color: #E5E5E5;
+}
+
+.brand {
+    color: aliceblue;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E5E5E5;
+}

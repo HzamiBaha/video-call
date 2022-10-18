@@ -1,0 +1,125 @@
+.button {
+    margin-top: 0px !important;
+    display: flex;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B2D2E;
+}
+
+
+.gridContainer {
+    width: 100%;
+}
+
+
+.container {
+    width: 80%;
+    margin: 35px 0;
+    padding: 0;
+}
+
+
+.margin {
+    margin-top: 0px;
+}
+
+
+.input_wrapper {
+    display: flex;
+    background-color: #1B1A1D;
+    height: 70px;
+    margin: 15px;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.input , .-internal-autofill-selected {
+    background: transparent;
+    border: none !important;
+    height: 100%;
+    width: 99%;
+    padding: 0px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.button {
+    cursor: pointer;
+    background: #418EFD;
+    border-radius: 5px;
+    width: 110px;
+    height: 60px;
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.button-hang-up {
+    cursor: pointer;
+    background: #D85140;
+    display: flex;
+    height: 70px;
+    margin: 15px;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E5E5E5;
+}
+
+.button-hang-up.disable {
+    opacity: 0.5;
+    cursor: unset;
+}
+
+.label {
+    padding: 5px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E5E5E5;
+}
+
+.button.call {
+    background: #6FE452;
+}
+
+.button.call.disable {
+    opacity: 0.5;
+    cursor: unset;
+}
+
+.paper {
+    padding: 0px;
+    border: none;
+}
