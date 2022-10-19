@@ -38,7 +38,8 @@
     border-radius: 15px;
 }
 
-.input , .-internal-autofill-selected {
+.input,
+input:-internal-autofill-selected {
     background: transparent;
     border: none !important;
     height: 100%;
@@ -122,4 +123,86 @@
 .paper {
     padding: 0px;
     border: none;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .label {
+        display: none;
+    }
+
+    .button-hang-up {
+        font-size: 18px;
+    }
+}
+
+/* For medium devices */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    .input_wrapper {
+        display: flex;
+        background-color: #1B1A1D;
+        height: 50px;
+        margin: 10px 0;
+        align-items: center;
+        padding: 5px 10px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .button{
+        height: 50px;
+
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .input_wrapper {
+        display: flex;
+        background-color: #1B1A1D;
+        height: 40px;
+        margin: 5px;
+        align-items: center;
+        padding: 5px ;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .button{
+        height: 40px;
+        font-size: 14px;
+        padding: 1px;
+    }
+    .button-hang-up {
+        cursor: pointer;
+        background: #D85140;
+        display: flex;
+        height: 40px;
+        margin: 5px;
+        align-items: center;
+        padding: 5px 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        justify-content: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 33px;
+        color: #E5E5E5;
+    }
 }

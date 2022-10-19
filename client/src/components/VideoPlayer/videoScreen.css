@@ -27,6 +27,46 @@
     position: relative;
 }
 
+.video_host {
+    border-radius: 1rem;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.video_guest {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.gridContainer {
+    justify-content: center;
+
+}
+
+.paper {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.name {
+    z-index: 10;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: #E5E5E5;
+
+}
+
 .appBar {
     display: flex;
     width: 88%;
@@ -50,10 +90,148 @@
 
 .brand {
     color: aliceblue;
-    font-family: 'Poppins';
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
     color: #E5E5E5;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .videoScreen {
+        flex-direction: column;
+    }
+
+    .videoScreen__guest {
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .videoScreen__host {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: row;
+        padding: 0 0 0 2rem;
+    }
+
+    .video_host {
+        border-radius: 1rem;
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    .name {
+        position: absolute;
+        top: 20%;
+        left: 50px;
+        width: max-content;
+    }
+
+    .video_host {
+        margin-top: 0px;
+    }
+
+    .video_guest {
+        position: absolute;
+        height: 90%;
+        border-radius: 2rem;
+    }
+}
+
+/* For medium devices */
+
+@media screen and (max-width: 768px) {
+    .videoScreen {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .videoScreen__guest {
+        margin: auto;
+        display: flex;
+        width: 70%;
+        height: 30%;
+    }
+
+    .videoScreen__host {
+        margin: auto;
+        display: flex;
+        width: 70%;
+        height: 70%;
+        flex-direction: column;
+        padding: unset;
+    }
+
+    .video_host {
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    .name {
+        position: absolute;
+        top: 8%;
+        left: 20%;
+        width: max-content;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .videoScreen__guest {
+        margin: auto;
+        display: flex;
+        width: 90%;
+        height: 30%;
+    }
+
+    .videoScreen__host {
+        margin: auto;
+        display: flex;
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+        padding: unset;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .videoScreen__guest {
+        margin: auto;
+        display: flex;
+        width: 98%;
+        height: 50%;
+    }
+
+    .videoScreen__host {
+        margin: auto;
+        display: flex;
+        width: 98%;
+        height: max-content;
+        flex-direction: column;
+        padding: unset;
+    }
+
+    .video_host {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .name {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        width: max-content;
+        z-index: 10;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
 }

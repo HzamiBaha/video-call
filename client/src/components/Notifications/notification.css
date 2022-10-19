@@ -1,0 +1,34 @@
+.button-answer {
+    cursor: pointer;
+    background: #418EFD;
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.label {
+    padding: 5px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E5E5E5;
+}
+
+.notification {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
