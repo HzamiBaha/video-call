@@ -165,7 +165,7 @@ input:-internal-autofill-selected {
 @media screen and (max-width: 576px) {}
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 420px) {
     .container {
         width: 100%;
         margin: 0;

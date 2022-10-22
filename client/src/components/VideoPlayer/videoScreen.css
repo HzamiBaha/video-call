@@ -201,31 +201,43 @@
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 420px) {
+    .appBar{
+        margin: 20px;
+        justify-content: center;
+    }
+    .video_host {
+        margin: 0px;
+        width: 70%;
+    }
     .videoScreen__guest {
         margin: auto;
         display: flex;
-        width: 98%;
-        height: 50%;
+        width: 90%;
+        height: 80%;
     }
 
     .videoScreen__host {
         margin: auto;
         display: flex;
-        width: 98%;
+        width: 90%;
         height: max-content;
         flex-direction: column;
         padding: unset;
+        position: unset;
     }
 
     .video_host {
         margin-top: 10px;
-        width: 80%;
+        width: 100px;
+        position: absolute;
+        top: 150px;
+        right: 50px;
     }
 
     .name {
-        position: absolute;
-        top: 5%;
+        position: relative;
+        top: 20%;
         left: 50%;
         width: max-content;
         z-index: 10;
@@ -233,5 +245,6 @@
         border-radius: 10px;
         font-size: 14px;
         font-weight: 600;
+        display: none;
     }
 }
